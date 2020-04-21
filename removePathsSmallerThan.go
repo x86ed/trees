@@ -2,6 +2,7 @@ package trees
 
 import "fmt"
 
+//RemovePathsSmallerThan removes nodes part of paths smaller than x
 func (n *Node) RemovePathsSmallerThan(x int) {
 	d := 1
 	n.removePathsUtil(d, x, nil, false)
